@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Grinding - Produktivitas &amp; Pomodoro</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "outline": "#6c797b", "tertiary": "#5e5c6e", "on-surface-variant": "#3c494a", "secondary": "#565e74", "on-surface": "#191c1e", "surface-dim": "#d8dadc", "on-tertiary-fixed": "#1b1a29", "on-tertiary-fixed-variant": "#464555", "surface-container-low": "#f2f4f6", "on-tertiary-container": "#3b3a4a", "surface-container": "#eceef0", "on-error": "#ffffff", "surface-bright": "#f7f9fb", "inverse-on-surface": "#eff1f3", "outline-variant": "#bbc9ca", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "primary-fixed": "#7ff4ff", "on-primary-container": "#004348", "tertiary-container": "#a7a4b7", "surface-container-highest": "#e0e3e5", "tertiary-fixed": "#e4e0f5", "on-secondary-fixed-variant": "#3f465c", "secondary-container": "#dae2fd", "surface": "#f7f9fb", "surface-variant": "#e0e3e5", "on-tertiary": "#ffffff", "background": "#f7f9fb", "tertiary-fixed-dim": "#c7c4d8", "inverse-surface": "#2d3133", "primary": "#006970", "on-primary-fixed-variant": "#004f55", "on-secondary": "#ffffff", "on-secondary-fixed": "#131b2e", "surface-container-high": "#e6e8ea", "error-container": "#ffdad6", "on-background": "#191c1e", "on-primary-fixed": "#002022", "primary-fixed-dim": "#4ed9e5", "surface-tint": "#006970", "inverse-primary": "#4ed9e5", "secondary-fixed": "#dae2fd", "on-primary": "#ffffff", "secondary-fixed-dim": "#bec6e0", "on-secondary-container": "#5c647a", "primary-container": "#14b8c4" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin-tablet": "1.5rem", "space-sm": "0.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "margin-mobile": "1rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-timer": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "display-timer": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f7f9fb;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-6 px-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span class="font-label-md text-label-md font-semibold text-on-surface">09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Grinding App Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xyk0aiakBaaL6ZkWxfeQZg6YDjE0oJF2qyDb-3KkC34ZljPOgyOVynFVVxF5I25Cm-GSR5joFZv0nNgSubFb-C5pRyupQnmVXabjNGrFXBcyNK7w3kMRjE4c-goMBEcuR578_Xyr0Tu2KU8ZIMRUj9vn3_5lDTBujf0JwDhcbUfHfMKA3i-5_0322Bhc-aCjXEF1FSiyk19ZXDkxd4s5lPtfBDL07LjsBIy990LS_OO_ri3UrK2KaphW0"/><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Grinding</span><h1 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Profil</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Pemberitahuan" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-2xl">notifications</span></button><button aria-label="Profil Pengguna" class="w-11 h-11 flex items-center justify-center rounded-full" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Pj7cuLFus_cnh2LQot_VCaYvZgtfQHsPRyL0KN71sSFyv03cilkMNQOmj3vg3UK663TCx-Vt-l5fY0Rynlxbet6gp-PK1-WxecsWQU-CnheHEF7X5e-RKNnFfCGv-qiuA3JxWKrUW0C7a2RyVzJGFtqb1iH2-xCyJ5xvVmjAOEPZc6ZF5at62o5JCZFnlTmZO7cODLa1Y3kQo4VDDWpvo5fY3PiGJF_5foO7dA46a5FAmy4J5BdN"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Content Container -->
+<div class="px-margin flex flex-col gap-space-lg pb-10">
+<!-- Top Action Bar (Profil Pengguna Header Bar) -->
+<div class="flex items-center justify-between pt-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">manage_accounts</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Akun Saya</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Profil Pengguna</h2>
+</div>
+</div>
+<button aria-label="Pengaturan Cepat" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Hero Profile Card -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container-lowest p-space-lg shadow-[0_8px_24px_-4px_rgba(15,23,42,0.06)]">
+<!-- Decorative Pastel Glow -->
+<div class="absolute -right-8 -top-8 w-36 h-36 rounded-full bg-primary-fixed/25 blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col items-center text-center">
+<!-- Avatar with Teal Accent Ring -->
+<div class="relative mb-space-sm">
+<div class="w-24 h-24 rounded-full p-1 bg-surface-container flex items-center justify-center shadow-sm">
+<img alt="Sarah Meilani" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Pj7cuLFus_cnh2LQot_VCaYvZgtfQHsPRyL0KN71sSFyv03cilkMNQOmj3vg3UK663TCx-Vt-l5fY0Rynlxbet6gp-PK1-WxecsWQU-CnheHEF7X5e-RKNnFfCGv-qiuA3JxWKrUW0C7a2RyVzJGFtqb1iH2-xCyJ5xvVmjAOEPZc6ZF5at62o5JCZFnlTmZO7cODLa1Y3kQo4VDDWpvo5fY3PiGJF_5foO7dA46a5FAmy4J5BdN"/>
+</div>
+<div class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+</div>
+</div>
+<!-- Name & Role -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Sarah Meilani</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">UI/UX Designer &amp; Product Lead</p>
+<!-- Pro Badge -->
+<div class="mt-space-sm inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[15px] text-primary">star</span>
+<span>Grinding Pro Member</span>
+</div>
+<!-- Action CTA: Edit Profil -->
+<div class="mt-space-md w-full flex items-center justify-center gap-space-sm">
+<button class="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-full bg-on-surface text-on-primary hover:bg-on-surface/90 transition-transform active:scale-95 shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Ubah Profil</span>
+</button>
+<button aria-label="Bagikan Profil" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Productivity Stats Grid (3 Col Pastel) -->
+<div class="grid grid-cols-3 gap-gutter-mobile">
+<!-- Total Fokus -->
+<div class="flex flex-col items-center justify-center p-3.5 rounded-lg bg-[#E6F4EA] text-center">
+<div class="w-8 h-8 rounded-full bg-[#CEEAD6] flex items-center justify-center text-[#137333] mb-1.5">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-[#0D652D]">42 Jam</span>
+<span class="font-label-sm text-label-sm text-[#137333]/80 mt-0.5">Total Fokus</span>
+</div>
+<!-- Tugas Tuntas -->
+<div class="flex flex-col items-center justify-center p-3.5 rounded-lg bg-secondary-container/60 text-center">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary mb-1.5">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-secondary-fixed">86</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant mt-0.5">Tugas Tuntas</span>
+</div>
+<!-- Rekor Streak -->
+<div class="flex flex-col items-center justify-center p-3.5 rounded-lg bg-[#FEF7E0] text-center">
+<div class="w-8 h-8 rounded-full bg-[#FEEFC3] flex items-center justify-center text-[#B06000] mb-1.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-[#8F4E00]">14 Hari</span>
+<span class="font-label-sm text-label-sm text-[#B06000]/80 mt-0.5">Rekor Streak</span>
+</div>
+</div>
+<!-- Weekly Target Progress Card -->
+<div class="rounded-lg bg-surface-container-lowest p-space-md shadow-[0_4px_16px_rgba(15,23,42,0.03)] flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-12 h-12 flex-shrink-0 flex items-center justify-center">
+<!-- Circular Progress Ring SVG -->
+<svg class="w-12 h-12 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="78, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-sm text-label-sm font-bold text-on-surface">78%</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Target Mingguan Tercapai</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Tersisa 4 siklus dari 18 target sesi</span>
+</div>
+</div>
+<button aria-label="Lihat Rincian Target" class="p-2 text-primary hover:bg-surface-container rounded-full transition-colors flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<!-- Group: Pengaturan Pomodoro & Produktivitas -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">Pengaturan Pomodoro</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Bawaan Sistem</span>
+</div>
+<div class="rounded-lg bg-surface-container-lowest p-2 shadow-[0_4px_16px_rgba(15,23,42,0.03)] flex flex-col gap-1">
+<!-- Durasi Fokus Bawaan -->
+<div class="flex items-center justify-between p-3 rounded-[12px] hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-primary-fixed/40 text-on-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">hourglass_top</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Durasi Fokus Bawaan</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Panjang sesi konsentrasi utama</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">
+<span>25 Menit</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span>
+</button>
+</div>
+<!-- Istirahat Pendek -->
+<div class="flex items-center justify-between p-3 rounded-[12px] hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-[#E6F4EA] text-[#137333] flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">coffee</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Istirahat Pendek</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Jeda singkat antar-siklus</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">
+<span>5 Menit</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span>
+</button>
+</div>
+<!-- Istirahat Panjang -->
+<div class="flex items-center justify-between p-3 rounded-[12px] hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">hotel</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Istirahat Panjang</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Setelah menyelesaikan 4 siklus</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">
+<span>15 Menit</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span>
+</button>
+</div>
+<!-- Suara Dering & Getaran (Toggle Switch) -->
+<div class="flex items-center justify-between p-3 rounded-[12px] hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">volume_up</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Suara Dering &amp; Getaran</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Nada lonceng zen &amp; haptic lembut</span>
+</div>
+</div>
+<button aria-checked="true" class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors focus:outline-none" role="switch" type="button">
+<span class="translate-x-5 inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow transition-transform"></span>
+</button>
+</div>
+<!-- Mode Jangan Ganggu Otomatis (Toggle Switch) -->
+<div class="flex items-center justify-between p-3 rounded-[12px] hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">do_not_disturb_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Mode Jangan Ganggu Otomatis</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Heningkan notifikasi selama fokus</span>
+</div>
+</div>
+<button aria-checked="true" class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors focus:outline-none" role="switch" type="button">
+<span class="translate-x-5 inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow transition-transform"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Group: Preferensi & Dukungan -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">Preferensi &amp; Layanan</span>
+</div>
+<div class="rounded-lg bg-surface-container-lowest p-2 shadow-[0_4px_16px_rgba(15,23,42,0.03)] flex flex-col gap-1">
+<!-- Backup & Sinkronisasi Cloud -->
+<button class="w-full flex items-center justify-between p-3 rounded-[12px] text-left hover:bg-surface-container-low transition-colors" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">cloud_sync</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Backup &amp; Sinkronisasi Cloud</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Terakhir sinkronisasi 10 menit lalu</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline flex-shrink-0">chevron_right</span>
+</button>
+<!-- Notifikasi Pengingat Tugas -->
+<button class="w-full flex items-center justify-between p-3 rounded-[12px] text-left hover:bg-surface-container-low transition-colors" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">notifications_active</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Notifikasi Pengingat Tugas</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Setiap hari pukul 08:30 WIB</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline flex-shrink-0">chevron_right</span>
+</button>
+<!-- Pusat Bantuan & FAQ -->
+<button class="w-full flex items-center justify-between p-3 rounded-[12px] text-left hover:bg-surface-container-low transition-colors" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">help_outline</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Pusat Bantuan &amp; FAQ</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Panduan pemakaian &amp; tips fokus</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline flex-shrink-0">chevron_right</span>
+</button>
+<!-- Kebijakan Privasi -->
+<button class="w-full flex items-center justify-between p-3 rounded-[12px] text-left hover:bg-surface-container-low transition-colors" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">shield</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Privasi &amp; Ketentuan Akun</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Data terlindungi enkripsi end-to-end</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline flex-shrink-0">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Keluar Akun Action -->
+<div class="pt-space-xs">
+<button class="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-full bg-error-container/60 hover:bg-error-container text-error transition-colors active:scale-98 font-label-lg text-label-lg font-semibold" type="button">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span>Keluar dari Akun</span>
+</button>
+<!-- Micro App Version Info -->
+<p class="text-center font-label-sm text-label-sm text-secondary mt-space-md">
+        Grinding App v2.4.1 • Dirancang untuk Produktivitas Tenang
+      </p>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction for toggles and nav synchronization
+  document.addEventListener('DOMContentLoaded', () => {
+    // Sync Bottom Navigation: Set "Profil" active
+    const navLinks = document.querySelectorAll('nav a[data-path]');
+    navLinks.forEach((link) => {
+      if (link.getAttribute('data-path') === 'profil') {
+        link.classList.remove('text-on-surface-variant');
+        link.classList.add('text-primary', 'font-semibold');
+      } else {
+        link.classList.remove('text-primary', 'font-semibold');
+        link.classList.add('text-on-surface-variant');
+      }
+    });
+
+    // Toggle switch interaction
+    const switches = document.querySelectorAll('button[role="switch"]');
+    switches.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const isChecked = btn.getAttribute('aria-checked') === 'true';
+        const newChecked = !isChecked;
+        btn.setAttribute('aria-checked', String(newChecked));
+        const indicator = btn.querySelector('span');
+        
+        if (newChecked) {
+          btn.classList.remove('bg-surface-container-high');
+          btn.classList.add('bg-primary-container');
+          indicator.classList.remove('translate-x-0');
+          indicator.classList.add('translate-x-5');
+        } else {
+          btn.classList.remove('bg-primary-container');
+          btn.classList.add('bg-surface-container-high');
+          indicator.classList.remove('translate-x-5');
+          indicator.classList.add('translate-x-0');
+        }
+      });
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-8px_24px_-4px_rgba(15,23,42,0.06)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-20 px-gutter-mobile relative"><a class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="beranda" href="#"><span class="material-symbols-outlined text-2xl">home</span><span class="font-label-sm text-label-sm">Beranda</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="kalender" href="#"><span class="material-symbols-outlined text-2xl">calendar_today</span><span class="font-label-sm text-label-sm">Kalender</span></a><div class="flex flex-col items-center justify-center -mt-6"><a aria-label="Timer Pomodoro" class="w-14 h-14 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center shadow-[0_12px_28px_-4px_rgba(20,184,196,0.5)] active:scale-95 transition-transform hover:brightness-105" data-path="timer" href="#"><span class="material-symbols-outlined text-3xl">hourglass_top</span></a><span class="font-label-sm text-label-sm font-semibold text-primary mt-1">Timer</span></div><a class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="statistik" href="#"><span class="material-symbols-outlined text-2xl">bar_chart</span><span class="font-label-sm text-label-sm">Statistik</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 transition-colors text-primary font-semibold" data-path="profil" href="#"><span class="material-symbols-outlined text-2xl">person</span><span class="font-label-sm text-label-sm">Profil</span></a></div></nav></body></html>

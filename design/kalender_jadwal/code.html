@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Grinding - Produktivitas &amp; Pomodoro</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "outline": "#6c797b", "tertiary": "#5e5c6e", "on-surface-variant": "#3c494a", "secondary": "#565e74", "on-surface": "#191c1e", "surface-dim": "#d8dadc", "on-tertiary-fixed": "#1b1a29", "on-tertiary-fixed-variant": "#464555", "surface-container-low": "#f2f4f6", "on-tertiary-container": "#3b3a4a", "surface-container": "#eceef0", "on-error": "#ffffff", "surface-bright": "#f7f9fb", "inverse-on-surface": "#eff1f3", "outline-variant": "#bbc9ca", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "primary-fixed": "#7ff4ff", "on-primary-container": "#004348", "tertiary-container": "#a7a4b7", "surface-container-highest": "#e0e3e5", "tertiary-fixed": "#e4e0f5", "on-secondary-fixed-variant": "#3f465c", "secondary-container": "#dae2fd", "surface": "#f7f9fb", "surface-variant": "#e0e3e5", "on-tertiary": "#ffffff", "background": "#f7f9fb", "tertiary-fixed-dim": "#c7c4d8", "inverse-surface": "#2d3133", "primary": "#006970", "on-primary-fixed-variant": "#004f55", "on-secondary": "#ffffff", "on-secondary-fixed": "#131b2e", "surface-container-high": "#e6e8ea", "error-container": "#ffdad6", "on-background": "#191c1e", "on-primary-fixed": "#002022", "primary-fixed-dim": "#4ed9e5", "surface-tint": "#006970", "inverse-primary": "#4ed9e5", "secondary-fixed": "#dae2fd", "on-primary": "#ffffff", "secondary-fixed-dim": "#bec6e0", "on-secondary-container": "#5c647a", "primary-container": "#14b8c4" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin-tablet": "1.5rem", "space-sm": "0.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "margin-mobile": "1rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-timer": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "display-timer": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f7f9fb;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-6 px-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span class="font-label-md text-label-md font-semibold text-on-surface">09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Grinding App Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xyk0aiakBaaL6ZkWxfeQZg6YDjE0oJF2qyDb-3KkC34ZljPOgyOVynFVVxF5I25Cm-GSR5joFZv0nNgSubFb-C5pRyupQnmVXabjNGrFXBcyNK7w3kMRjE4c-goMBEcuR578_Xyr0Tu2KU8ZIMRUj9vn3_5lDTBujf0JwDhcbUfHfMKA3i-5_0322Bhc-aCjXEF1FSiyk19ZXDkxd4s5lPtfBDL07LjsBIy990LS_OO_ri3UrK2KaphW0"/><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Grinding</span><h1 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Kalender</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Pemberitahuan" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-2xl">notifications</span></button><button aria-label="Profil Pengguna" class="w-11 h-11 flex items-center justify-center rounded-full" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Pj7cuLFus_cnh2LQot_VCaYvZgtfQHsPRyL0KN71sSFyv03cilkMNQOmj3vg3UK663TCx-Vt-l5fY0Rynlxbet6gp-PK1-WxecsWQU-CnheHEF7X5e-RKNnFfCGv-qiuA3JxWKrUW0C7a2RyVzJGFtqb1iH2-xCyJ5xvVmjAOEPZc6ZF5at62o5JCZFnlTmZO7cODLa1Y3kQo4VDDWpvo5fY3PiGJF_5foO7dA46a5FAmy4J5BdN"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full">
+<div class="px-margin flex flex-col gap-space-lg pb-10">
+<!-- Sub-header & Month Selector -->
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Agenda Produktif</span>
+<div class="flex items-center gap-1.5 mt-0.5 cursor-pointer active:opacity-75 transition-opacity" id="monthDropdownBtn">
+<h2 class="font-headline-md text-headline-md text-on-surface">Oktober 2024</h2>
+<span class="material-symbols-outlined text-primary text-xl transition-transform duration-200" id="dropdownIcon">keyboard_arrow_down</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high rounded-full p-1">
+<button aria-label="Bulan sebelumnya" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button aria-label="Bulan berikutnya" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Date Strip (Inspirasi Layar ke-4 UI Kit) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between overflow-x-auto pb-1 gap-2 no-scrollbar scroll-smooth">
+<!-- Sen 21 -->
+<button class="date-pill group flex flex-col items-center justify-center min-w-[54px] py-3 px-2 rounded-2xl bg-surface-container-lowest transition-all hover:bg-surface-container-high active:scale-95 text-on-surface-variant" type="button">
+<span class="font-label-sm text-label-sm font-medium group-hover:text-on-surface">Sen</span>
+<span class="font-headline-sm text-headline-sm font-semibold mt-0.5 text-on-surface">21</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim mt-1.5 opacity-60"></span>
+</button>
+<!-- Sel 22 -->
+<button class="date-pill group flex flex-col items-center justify-center min-w-[54px] py-3 px-2 rounded-2xl bg-surface-container-lowest transition-all hover:bg-surface-container-high active:scale-95 text-on-surface-variant" type="button">
+<span class="font-label-sm text-label-sm font-medium group-hover:text-on-surface">Sel</span>
+<span class="font-headline-sm text-headline-sm font-semibold mt-0.5 text-on-surface">22</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim mt-1.5 opacity-60"></span>
+</button>
+<!-- Rab 23 -->
+<button class="date-pill group flex flex-col items-center justify-center min-w-[54px] py-3 px-2 rounded-2xl bg-surface-container-lowest transition-all hover:bg-surface-container-high active:scale-95 text-on-surface-variant" type="button">
+<span class="font-label-sm text-label-sm font-medium group-hover:text-on-surface">Rab</span>
+<span class="font-headline-sm text-headline-sm font-semibold mt-0.5 text-on-surface">23</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim mt-1.5 opacity-60"></span>
+</button>
+<!-- Kam 24 (Aktif Terpilih - Teal Pill Accent) -->
+<button class="date-pill active-pill flex flex-col items-center justify-center min-w-[58px] py-3.5 px-2.5 rounded-2xl bg-primary-container text-on-primary-fixed shadow-[0_8px_20px_-4px_rgba(20,184,196,0.45)] scale-105 transition-all" type="button">
+<span class="font-label-sm text-label-sm font-semibold text-on-primary-fixed uppercase tracking-wider">Kam</span>
+<span class="font-headline-md text-headline-md font-bold text-on-primary-fixed -my-0.5">24</span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest mt-1"></span>
+</button>
+<!-- Jum 25 -->
+<button class="date-pill group flex flex-col items-center justify-center min-w-[54px] py-3 px-2 rounded-2xl bg-surface-container-lowest transition-all hover:bg-surface-container-high active:scale-95 text-on-surface-variant" type="button">
+<span class="font-label-sm text-label-sm font-medium group-hover:text-on-surface">Jum</span>
+<span class="font-headline-sm text-headline-sm font-semibold mt-0.5 text-on-surface">25</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim mt-1.5 opacity-60"></span>
+</button>
+<!-- Sab 26 -->
+<button class="date-pill group flex flex-col items-center justify-center min-w-[54px] py-3 px-2 rounded-2xl bg-surface-container-lowest transition-all hover:bg-surface-container-high active:scale-95 text-on-surface-variant" type="button">
+<span class="font-label-sm text-label-sm font-medium group-hover:text-on-surface">Sab</span>
+<span class="font-headline-sm text-headline-sm font-semibold mt-0.5 text-on-surface">26</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim mt-1.5 opacity-60"></span>
+</button>
+<!-- Min 27 -->
+<button class="date-pill group flex flex-col items-center justify-center min-w-[54px] py-3 px-2 rounded-2xl bg-surface-container-lowest transition-all hover:bg-surface-container-high active:scale-95 text-on-surface-variant" type="button">
+<span class="font-label-sm text-label-sm font-medium group-hover:text-on-surface">Min</span>
+<span class="font-headline-sm text-headline-sm font-semibold mt-0.5 text-on-surface">27</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim mt-1.5 opacity-60"></span>
+</button>
+</div>
+</div>
+<!-- Daily Focus Summary Banner -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-low p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">timer</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold">Kamis, 24 Oktober</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">5 Tugas Terjadwal • <span class="font-semibold text-primary">3 Jam 15 Mnt</span></p>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-3 py-1.5 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">65% Target</span>
+</div>
+</div>
+<!-- Filter Kategori Kapsul -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+<button class="category-chip px-4 py-1.5 rounded-full bg-on-surface text-surface-container-lowest font-label-md text-label-md font-semibold transition-all shadow-sm" type="button">
+        Semua
+      </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md font-medium hover:text-on-surface transition-all" type="button">
+        Desain
+      </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md font-medium hover:text-on-surface transition-all" type="button">
+        Engineering
+      </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md font-medium hover:text-on-surface transition-all" type="button">
+        Rapat
+      </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md font-medium hover:text-on-surface transition-all" type="button">
+        Refleksi
+      </button>
+</div>
+<!-- Timeline & Pastel Task Blocks Section -->
+<div class="relative flex flex-col gap-5 pt-1">
+<!-- Current Time Indicator Line (Subtle Pomodoro Glow) -->
+<div class="relative flex items-center gap-3">
+<span class="w-12 font-label-sm text-label-sm font-semibold text-primary shrink-0 text-right">08:00</span>
+<div class="flex-1 h-0.5 bg-surface-container-highest relative flex items-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary -ml-1"></div>
+</div>
+</div>
+<!-- Item 1: Pastel Pink (08:30 - 09:15) -->
+<div class="flex items-start gap-3">
+<div class="w-12 pt-1 flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">08:30</span>
+<span class="font-body-sm text-[10px] text-outline">09:15</span>
+</div>
+<div class="flex-1 rounded-2xl p-4 bg-error-container text-on-surface transition-transform active:scale-[0.99] cursor-pointer shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest/80 text-on-surface font-label-sm text-[11px] font-semibold">
+                  Desain Produk
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px] text-error">timer</span> 45 mnt
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight truncate">Riset &amp; Eksplorasi Desain</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">Moodboard antarmuka mobile &amp; benchmark micro-interaction</p>
+</div>
+<button aria-label="Mulai Pomodoro" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 text-on-surface flex items-center justify-center shrink-0 hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+</button>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-[11px] font-medium text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> 2/2 Sesi Selesai
+            </span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Selesai</span>
+</div>
+</div>
+</div>
+<!-- Marker Jam 09:30 -->
+<div class="relative flex items-center gap-3">
+<span class="w-12 font-label-sm text-label-sm font-semibold text-outline shrink-0 text-right">09:30</span>
+<div class="flex-1 h-0.5 bg-surface-container-highest"></div>
+</div>
+<!-- Item 2: Pastel Lavender (09:30 - 10:30) Deep Work Active Card -->
+<div class="flex items-start gap-3">
+<div class="w-12 pt-1 flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">09:30</span>
+<span class="font-body-sm text-[10px] text-outline">10:30</span>
+</div>
+<div class="flex-1 rounded-2xl p-4 bg-tertiary-fixed text-on-tertiary-fixed transition-transform active:scale-[0.99] cursor-pointer shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest/80 text-on-surface font-label-sm text-[11px] font-semibold">
+                  Engineering
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px] text-tertiary">timer</span> 60 mnt
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight truncate">Sesi Deep Work: Arsitektur DB</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">Optimasi relasi skema Postgres &amp; penulisan indexing query</p>
+</div>
+<button aria-label="Lanjutkan Fokus" class="w-8 h-8 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center shrink-0 hover:brightness-105 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">hourglass_top</span>
+</button>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Sedang Berlangsung</span>
+</div>
+<span class="font-label-sm text-label-sm font-medium text-on-tertiary-fixed-variant">Siklus 1/2 (25m)</span>
+</div>
+</div>
+</div>
+<!-- Marker Jam 11:00 -->
+<div class="relative flex items-center gap-3">
+<span class="w-12 font-label-sm text-label-sm font-semibold text-outline shrink-0 text-right">11:00</span>
+<div class="flex-1 h-0.5 bg-surface-container-highest"></div>
+</div>
+<!-- Item 3: Pastel Mint (11:00 - 11:45) -->
+<div class="flex items-start gap-3">
+<div class="w-12 pt-1 flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">11:00</span>
+<span class="font-body-sm text-[10px] text-outline">11:45</span>
+</div>
+<div class="flex-1 rounded-2xl p-4 bg-secondary-fixed text-on-secondary-fixed transition-transform active:scale-[0.99] cursor-pointer shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest/80 text-on-surface font-label-sm text-[11px] font-semibold">
+                  Rapat
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">groups</span> 45 mnt
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight truncate">Diskusi Sprint &amp; Backlog</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">Sinkronisasi tim produk, estimasi story point rilis v2.4</p>
+</div>
+<button aria-label="Mulai Rapat" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 text-on-surface flex items-center justify-center shrink-0 hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-base">videocam</span>
+</button>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-[11px] font-medium text-on-secondary-fixed-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">event_repeat</span> Google Meet
+            </span>
+<span class="font-label-sm text-label-sm font-medium text-on-surface-variant">Mendatang</span>
+</div>
+</div>
+</div>
+<!-- Marker Jam 13:30 -->
+<div class="relative flex items-center gap-3">
+<span class="w-12 font-label-sm text-label-sm font-semibold text-outline shrink-0 text-right">13:30</span>
+<div class="flex-1 h-0.5 bg-surface-container-highest"></div>
+</div>
+<!-- Item 4: Pastel Sky (13:30 - 14:15) -->
+<div class="flex items-start gap-3">
+<div class="w-12 pt-1 flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">13:30</span>
+<span class="font-body-sm text-[10px] text-outline">14:15</span>
+</div>
+<div class="flex-1 rounded-2xl p-4 bg-primary-fixed text-on-primary-fixed transition-transform active:scale-[0.99] cursor-pointer shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest/80 text-on-surface font-label-sm text-[11px] font-semibold">
+                  Dokumen
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px] text-primary">timer</span> 45 mnt
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight truncate">Penyusunan Dokumentasi API</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">Pembaruan spesifikasi OpenAPI dan endpoint auth JWT</p>
+</div>
+<button aria-label="Mulai Sesi" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 text-on-surface flex items-center justify-center shrink-0 hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+</button>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-[11px] font-medium text-on-primary-fixed-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span> Estimasi 2 Siklus
+            </span>
+<span class="font-label-sm text-label-sm font-medium text-on-surface-variant">Terjadwal</span>
+</div>
+</div>
+</div>
+<!-- Marker Jam 15:00 -->
+<div class="relative flex items-center gap-3">
+<span class="w-12 font-label-sm text-label-sm font-semibold text-outline shrink-0 text-right">15:00</span>
+<div class="flex-1 h-0.5 bg-surface-container-highest"></div>
+</div>
+<!-- Item 5: Pastel Amber (15:00 - 15:30) -->
+<div class="flex items-start gap-3">
+<div class="w-12 pt-1 flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">15:00</span>
+<span class="font-body-sm text-[10px] text-outline">15:30</span>
+</div>
+<div class="flex-1 rounded-2xl p-4 bg-surface-container-high text-on-surface transition-transform active:scale-[0.99] cursor-pointer shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-2">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest/80 text-on-surface font-label-sm text-[11px] font-semibold">
+                  Refleksi
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">psychology</span> 30 mnt
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight truncate">Review &amp; Rekap Harian</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">Evaluasi tingkat fokus harian dan perapian tugas esok hari</p>
+</div>
+<button aria-label="Review Sesi" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 text-on-surface flex items-center justify-center shrink-0 hover:bg-surface-container-lowest transition-colors" type="button">
+<span class="material-symbols-outlined text-base">edit_note</span>
+</button>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-[11px] font-medium text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">bookmark</span> Jurnal Harian
+            </span>
+<span class="font-label-sm text-label-sm font-medium text-on-surface-variant">Sore</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Floating Action Trigger Row (Ergonomic Thumb Placement) -->
+<div class="pt-2 flex items-center gap-3">
+<button class="flex-1 py-3.5 px-6 rounded-full bg-on-surface text-surface-container-lowest font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-[0_8px_20px_-4px_rgba(15,23,42,0.2)] active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-xl">add</span>
+<span>Tambah Agenda</span>
+</button>
+<button aria-label="Buka Opsi Tampilan" class="w-12 h-12 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-dim transition-colors" type="button">
+<span class="material-symbols-outlined text-2xl">tune</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction untuk Horizontal Date Strip
+  document.querySelectorAll('.date-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.date-pill').forEach(p => {
+        p.classList.remove('active-pill', 'bg-primary-container', 'text-on-primary-fixed', 'shadow-[0_8px_20px_-4px_rgba(20,184,196,0.45)]', 'scale-105');
+        p.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        const dot = p.querySelector('span:last-child');
+        if (dot) {
+          dot.classList.remove('bg-surface-container-lowest');
+          dot.classList.add('bg-secondary-fixed-dim', 'opacity-60');
+        }
+      });
+
+      pill.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      pill.classList.add('active-pill', 'bg-primary-container', 'text-on-primary-fixed', 'shadow-[0_8px_20px_-4px_rgba(20,184,196,0.45)]', 'scale-105');
+      const activeDot = pill.querySelector('span:last-child');
+      if (activeDot) {
+        activeDot.classList.remove('bg-secondary-fixed-dim', 'opacity-60');
+        activeDot.classList.add('bg-surface-container-lowest');
+      }
+    });
+  });
+
+  // Micro-interaction untuk Chip Kategori
+  document.querySelectorAll('.category-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.category-chip').forEach(c => {
+        c.classList.remove('bg-on-surface', 'text-surface-container-lowest', 'font-semibold', 'shadow-sm');
+        c.classList.add('bg-surface-container-high', 'text-on-surface-variant', 'font-medium');
+      });
+      chip.classList.remove('bg-surface-container-high', 'text-on-surface-variant', 'font-medium');
+      chip.classList.add('bg-on-surface', 'text-surface-container-lowest', 'font-semibold', 'shadow-sm');
+    });
+  });
+
+  // Highlight Navigasi Aktif untuk Kalender
+  const calTab = document.querySelector('nav a[data-path="kalender"]');
+  if (calTab) {
+    document.querySelectorAll('nav a').forEach(a => {
+      a.classList.remove('text-primary', 'font-semibold');
+      a.classList.add('text-on-surface-variant');
+    });
+    calTab.classList.add('text-primary', 'font-semibold');
+    calTab.classList.remove('text-on-surface-variant');
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-8px_24px_-4px_rgba(15,23,42,0.06)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-20 px-gutter-mobile relative"><a class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="beranda" href="#"><span class="material-symbols-outlined text-2xl">home</span><span class="font-label-sm text-label-sm">Beranda</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 transition-colors text-primary font-semibold" data-path="kalender" href="#"><span class="material-symbols-outlined text-2xl">calendar_today</span><span class="font-label-sm text-label-sm">Kalender</span></a><div class="flex flex-col items-center justify-center -mt-6"><a aria-label="Timer Pomodoro" class="w-14 h-14 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center shadow-[0_12px_28px_-4px_rgba(20,184,196,0.5)] active:scale-95 transition-transform hover:brightness-105" data-path="timer" href="#"><span class="material-symbols-outlined text-3xl">hourglass_top</span></a><span class="font-label-sm text-label-sm font-semibold text-primary mt-1">Timer</span></div><a class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="statistik" href="#"><span class="material-symbols-outlined text-2xl">bar_chart</span><span class="font-label-sm text-label-sm">Statistik</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="profil" href="#"><span class="material-symbols-outlined text-2xl">person</span><span class="font-label-sm text-label-sm">Profil</span></a></div></nav></body></html>

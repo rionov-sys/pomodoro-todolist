@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Grinding - Produktivitas &amp; Pomodoro</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "outline": "#6c797b", "tertiary": "#5e5c6e", "on-surface-variant": "#3c494a", "secondary": "#565e74", "on-surface": "#191c1e", "surface-dim": "#d8dadc", "on-tertiary-fixed": "#1b1a29", "on-tertiary-fixed-variant": "#464555", "surface-container-low": "#f2f4f6", "on-tertiary-container": "#3b3a4a", "surface-container": "#eceef0", "on-error": "#ffffff", "surface-bright": "#f7f9fb", "inverse-on-surface": "#eff1f3", "outline-variant": "#bbc9ca", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "primary-fixed": "#7ff4ff", "on-primary-container": "#004348", "tertiary-container": "#a7a4b7", "surface-container-highest": "#e0e3e5", "tertiary-fixed": "#e4e0f5", "on-secondary-fixed-variant": "#3f465c", "secondary-container": "#dae2fd", "surface": "#f7f9fb", "surface-variant": "#e0e3e5", "on-tertiary": "#ffffff", "background": "#f7f9fb", "tertiary-fixed-dim": "#c7c4d8", "inverse-surface": "#2d3133", "primary": "#006970", "on-primary-fixed-variant": "#004f55", "on-secondary": "#ffffff", "on-secondary-fixed": "#131b2e", "surface-container-high": "#e6e8ea", "error-container": "#ffdad6", "on-background": "#191c1e", "on-primary-fixed": "#002022", "primary-fixed-dim": "#4ed9e5", "surface-tint": "#006970", "inverse-primary": "#4ed9e5", "secondary-fixed": "#dae2fd", "on-primary": "#ffffff", "secondary-fixed-dim": "#bec6e0", "on-secondary-container": "#5c647a", "primary-container": "#14b8c4" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin-tablet": "1.5rem", "space-sm": "0.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "margin-mobile": "1rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-timer": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "display-timer": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f7f9fb;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-6 px-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span class="font-label-md text-label-md font-semibold text-on-surface">09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Grinding App Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xyk0aiakBaaL6ZkWxfeQZg6YDjE0oJF2qyDb-3KkC34ZljPOgyOVynFVVxF5I25Cm-GSR5joFZv0nNgSubFb-C5pRyupQnmVXabjNGrFXBcyNK7w3kMRjE4c-goMBEcuR578_Xyr0Tu2KU8ZIMRUj9vn3_5lDTBujf0JwDhcbUfHfMKA3i-5_0322Bhc-aCjXEF1FSiyk19ZXDkxd4s5lPtfBDL07LjsBIy990LS_OO_ri3UrK2KaphW0"/><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Grinding</span><h1 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Timer</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Pemberitahuan" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-2xl">notifications</span></button><button aria-label="Profil Pengguna" class="w-11 h-11 flex items-center justify-center rounded-full" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Pj7cuLFus_cnh2LQot_VCaYvZgtfQHsPRyL0KN71sSFyv03cilkMNQOmj3vg3UK663TCx-Vt-l5fY0Rynlxbet6gp-PK1-WxecsWQU-CnheHEF7X5e-RKNnFfCGv-qiuA3JxWKrUW0C7a2RyVzJGFtqb1iH2-xCyJ5xvVmjAOEPZc6ZF5at62o5JCZFnlTmZO7cODLa1Y3kQo4VDDWpvo5fY3PiGJF_5foO7dA46a5FAmy4J5BdN"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full px-margin pb-6 gap-y-space-md">
+<!-- Top Bar / Sub-header Meta -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">Sesi Fokus Aktif</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Target Produktif</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Pengaturan Audio Latar" class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-highest transition-colors" id="btn-soundscape" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">headphones</span>
+<span>Lo-Fi</span>
+</button>
+<button aria-label="Bantuan &amp; Tips Fokus" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+</button>
+</div>
+</div>
+<!-- Active Task Banner Card -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-4 shadow-[0_8px_24px_-4px_rgba(15,23,42,0.05)]">
+<div class="flex items-start justify-between gap-3">
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+            Fokus Utama
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prioritas P1</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">
+          Membuat Komponen App Design System
+        </p>
+<div class="flex items-center gap-2 mt-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">timelapse</span>
+<span>Target hari ini: 4 siklus (100 mnt)</span>
+</div>
+</div>
+<button aria-label="Ganti atau Sunting Tugas" class="w-9 h-9 shrink-0 flex items-center justify-center rounded-full bg-surface-container text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+<!-- Micro progress indicator bar -->
+<div class="w-full bg-surface-container-high rounded-full h-1.5 mt-3 overflow-hidden">
+<div class="bg-primary-container h-1.5 rounded-full" style="width: 50%;"></div>
+</div>
+</div>
+<!-- Pomodoro Circular Timer Area -->
+<div class="relative flex flex-col items-center justify-center py-4">
+<!-- Ambient circular glow -->
+<div class="absolute w-64 h-64 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="relative w-72 h-72 flex items-center justify-center">
+<!-- SVG Progress Ring -->
+<svg class="w-full h-full -rotate-90 transform" viewbox="0 0 260 260">
+<!-- Background Track -->
+<circle class="text-surface-container-highest" cx="130" cy="130" fill="transparent" r="110" stroke="currentColor" stroke-width="12"></circle>
+<!-- Progress Fill Track -->
+<circle class="text-primary-container transition-all duration-1000 ease-linear" cx="130" cy="130" fill="transparent" id="timer-progress" r="110" stroke="currentColor" stroke-dasharray="691.15" stroke-dashoffset="138.23" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<!-- Center Countdown & Status Information -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center select-none px-4">
+<!-- Flow badge -->
+<div class="inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span>Deep Flow Mode</span>
+</div>
+<!-- Digital Timer Display -->
+<span class="font-display-timer text-display-timer text-on-surface tracking-tighter tabular-nums drop-shadow-sm font-extrabold" id="timer-display">
+          24:36
+        </span>
+<!-- Phase Info Subtext -->
+<p class="font-label-md text-label-md text-on-surface-variant font-medium mt-1">
+          Sesi 2 dari 4 • Siklus Pomodoro
+        </p>
+<!-- Subtle Tomato Cycle Dots -->
+<div class="flex items-center gap-1.5 mt-3">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Duration Preset Selector Pills -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md text-on-surface-variant">Pilihan Durasi Sesi</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Standar 25 Menit</span>
+</div>
+<div class="flex items-center justify-between gap-1.5 overflow-x-auto no-scrollbar py-1">
+<button class="duration-btn flex-1 py-2 px-3 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md text-center shadow-sm active:scale-95 transition-all hover:bg-surface-container" data-duration="5" type="button">
+        5 mnt
+      </button>
+<button class="duration-btn flex-1 py-2 px-3 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md text-center shadow-sm active:scale-95 transition-all hover:bg-surface-container" data-duration="10" type="button">
+        10 mnt
+      </button>
+<button class="duration-btn active-pill flex-1 py-2 px-3 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md text-center shadow-md font-bold active:scale-95 transition-all" data-duration="25" type="button">
+        25 mnt
+      </button>
+<button class="duration-btn flex-1 py-2 px-3 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md text-center shadow-sm active:scale-95 transition-all hover:bg-surface-container" data-duration="30" type="button">
+        30 mnt
+      </button>
+<button class="duration-btn flex-1 py-2 px-2.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md text-center shadow-sm active:scale-95 transition-all hover:bg-surface-container flex items-center justify-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-[15px]">tune</span>
+<span>Atur</span>
+</button>
+</div>
+</div>
+<!-- Ambient Soundscape Mini Bar -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-4 py-2.5 rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">graphic_eq</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Latar Suara Ambience</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hujan Tropis Tenang</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+        Ubah
+      </button>
+<button aria-label="Matikan audio" class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+</button>
+</div>
+</div>
+<!-- Action CTA Controls Area -->
+<div class="flex flex-col gap-3 pt-1">
+<!-- Primary Dark Pill Action Button -->
+<button class="w-full py-4 px-6 rounded-full bg-inverse-surface text-inverse-on-surface font-headline-sm text-headline-sm flex items-center justify-center gap-2.5 shadow-[0_12px_28px_-6px_rgba(15,23,42,0.25)] active:scale-[0.98] transition-transform" id="btn-toggle-timer" type="button">
+<span class="material-symbols-outlined text-[24px]" id="timer-toggle-icon">pause</span>
+<span id="timer-toggle-label">Jeda Sesi</span>
+</button>
+<!-- Secondary Twin Controls -->
+<div class="grid grid-cols-2 gap-3">
+<button class="py-3 px-4 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-1.5 active:scale-95 transition-transform hover:bg-surface-container-highest" id="btn-finish-now" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+<span>Selesai Sekarang</span>
+</button>
+<button class="py-3 px-4 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center gap-1.5 active:scale-95 transition-transform hover:bg-surface-container-high shadow-sm" id="btn-skip-break" type="button">
+<span class="material-symbols-outlined text-[18px]">skip_next</span>
+<span>Istirahat (5m)</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    let isRunning = true;
+    let totalSeconds = 24 * 60 + 36;
+    let initialSeconds = 25 * 60;
+    const perimeter = 2 * Math.PI * 110;
+
+    const timerDisplay = document.getElementById('timer-display');
+    const timerProgress = document.getElementById('timer-progress');
+    const toggleBtn = document.getElementById('btn-toggle-timer');
+    const toggleIcon = document.getElementById('timer-toggle-icon');
+    const toggleLabel = document.getElementById('timer-toggle-label');
+    const durationBtns = document.querySelectorAll('.duration-btn');
+
+    function updateDisplay() {
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds % 60;
+      timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      
+      const ratio = totalSeconds / initialSeconds;
+      const offset = perimeter * (1 - ratio);
+      timerProgress.style.strokeDashoffset = offset;
+    }
+
+    const timerInterval = setInterval(() => {
+      if (isRunning && totalSeconds > 0) {
+        totalSeconds--;
+        updateDisplay();
+      }
+    }, 1000);
+
+    toggleBtn?.addEventListener('click', () => {
+      isRunning = !isRunning;
+      if (isRunning) {
+        toggleIcon.textContent = 'pause';
+        toggleLabel.textContent = 'Jeda Sesi';
+        toggleBtn.classList.remove('bg-primary');
+        toggleBtn.classList.add('bg-inverse-surface');
+      } else {
+        toggleIcon.textContent = 'play_arrow';
+        toggleLabel.textContent = 'Lanjutkan Sesi';
+        toggleBtn.classList.remove('bg-inverse-surface');
+        toggleBtn.classList.add('bg-primary');
+      }
+    });
+
+    durationBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const d = btn.getAttribute('data-duration');
+        if (!d) return;
+        const mins = parseInt(d, 10);
+        initialSeconds = mins * 60;
+        totalSeconds = initialSeconds;
+        isRunning = false;
+        toggleIcon.textContent = 'play_arrow';
+        toggleLabel.textContent = 'Mulai Fokus';
+        toggleBtn.classList.remove('bg-inverse-surface');
+        toggleBtn.classList.add('bg-primary');
+
+        durationBtns.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary-fixed', 'font-bold', 'shadow-md');
+          b.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary-fixed', 'font-bold', 'shadow-md');
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+
+        updateDisplay();
+      });
+    });
+
+    document.getElementById('btn-finish-now')?.addEventListener('click', () => {
+      totalSeconds = 0;
+      updateDisplay();
+      isRunning = false;
+      toggleIcon.textContent = 'replay';
+      toggleLabel.textContent = 'Mulai Ulang';
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-8px_24px_-4px_rgba(15,23,42,0.06)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-20 px-gutter-mobile relative"><a class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="beranda" href="#"><span class="material-symbols-outlined text-2xl">home</span><span class="font-label-sm text-label-sm">Beranda</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="kalender" href="#"><span class="material-symbols-outlined text-2xl">calendar_today</span><span class="font-label-sm text-label-sm">Kalender</span></a><div class="flex flex-col items-center justify-center -mt-6"><a aria-current="page" aria-label="Timer Pomodoro" class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center shadow-[0_12px_28px_-4px_rgba(20,184,196,0.5)] active:scale-95 transition-transform hover:brightness-105 text-primary font-semibold" data-path="timer" href="#"><span class="material-symbols-outlined text-3xl">hourglass_top</span></a><span class="font-label-sm text-label-sm font-semibold text-primary mt-1">Timer</span></div><a class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="statistik" href="#"><span class="material-symbols-outlined text-2xl">bar_chart</span><span class="font-label-sm text-label-sm">Statistik</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-12 gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="profil" href="#"><span class="material-symbols-outlined text-2xl">person</span><span class="font-label-sm text-label-sm">Profil</span></a></div></nav></body></html>
