@@ -1,0 +1,62 @@
+com.grinding.app-savedstate-1.2.1-0 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\00b74e44ebc822b224a03037ad003b7f\transformed\savedstate-1.2.1\res
+com.grinding.app-navigation-runtime-2.8.3-1 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\017ff41a9fb2802d6b19a0fab37fea1e\transformed\navigation-runtime-2.8.3\res
+com.grinding.app-lifecycle-runtime-ktx-release-2 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\0a2d913161226bf9f5ab17e69c767c3f\transformed\lifecycle-runtime-ktx-release\res
+com.grinding.app-hilt-navigation-compose-1.2.0-3 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\0f001a78486ed5572d8857db3649f1c8\transformed\hilt-navigation-compose-1.2.0\res
+com.grinding.app-ui-unit-release-4 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\1505fbc5610e2c8a1011d52431e29867\transformed\ui-unit-release\res
+com.grinding.app-animation-release-5 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\162e75711852f43b3c24c90ea2b57d14\transformed\animation-release\res
+com.grinding.app-emoji2-1.3.0-6 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\1b40daaf05ac96d93eb7a0e5107e34ec\transformed\emoji2-1.3.0\res
+com.grinding.app-browser-1.8.0-7 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\1c487e08917b194bfa3a47d8d117584b\transformed\browser-1.8.0\res
+com.grinding.app-ui-geometry-release-8 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\1cb526b45d27322aafb06f59249866f7\transformed\ui-geometry-release\res
+com.grinding.app-tracing-1.2.0-9 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\271f9253ffb751fa255e58a2ef6e0c07\transformed\tracing-1.2.0\res
+com.grinding.app-ui-release-10 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\33ce02087a89606cd89167ce0ddff188\transformed\ui-release\res
+com.grinding.app-core-ktx-1.15.0-11 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\3a57a3970fbb81b4dab8ec27c83ec863\transformed\core-ktx-1.15.0\res
+com.grinding.app-material-icons-core-release-12 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\3dadd2f691e8e358a8862015ff569108\transformed\material-icons-core-release\res
+com.grinding.app-lifecycle-process-2.8.7-13 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\4d2e58c8d2ad0cd12f00c8bd170e3e5d\transformed\lifecycle-process-2.8.7\res
+com.grinding.app-navigation-common-2.8.3-14 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\53c804c3d3318d139806efee575045d4\transformed\navigation-common-2.8.3\res
+com.grinding.app-annotation-experimental-1.4.1-15 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\57b76d26c7d501cc017656f813394fe3\transformed\annotation-experimental-1.4.1\res
+com.grinding.app-material-icons-extended-release-16 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\5a3c4341f0682b8f1bd7473f9a24ca13\transformed\material-icons-extended-release\res
+com.grinding.app-navigation-common-ktx-2.8.3-17 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\6208074a75fedfb9db517caf105f785d\transformed\navigation-common-ktx-2.8.3\res
+com.grinding.app-material-ripple-release-18 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\66a479e39a398a75470e1cb31940d096\transformed\material-ripple-release\res
+com.grinding.app-navigation-compose-2.8.3-19 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\69ed14c00e33476c2f53feb5b1a8f69a\transformed\navigation-compose-2.8.3\res
+com.grinding.app-animation-core-release-20 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\6bd89619a0c3a8b2a6530697c9d08b01\transformed\animation-core-release\res
+com.grinding.app-lifecycle-runtime-compose-release-21 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\6d805fb6a8037f2e5bbf683cd8479606\transformed\lifecycle-runtime-compose-release\res
+com.grinding.app-savedstate-ktx-1.2.1-22 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\6e4f39b815b4d51486c065c68568c30e\transformed\savedstate-ktx-1.2.1\res
+com.grinding.app-lifecycle-livedata-core-ktx-2.8.7-23 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\759d2da9a538ebb5960788490f3588a1\transformed\lifecycle-livedata-core-ktx-2.8.7\res
+com.grinding.app-material-release-24 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\78557fa82ebbafab766873949801cfe1\transformed\material-release\res
+com.grinding.app-lifecycle-livedata-2.8.7-25 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\79ef789ea497dd00e70ffcb6c8876700\transformed\lifecycle-livedata-2.8.7\res
+com.grinding.app-lifecycle-runtime-release-26 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\7b867ec09d5fdb301ed2218f46c3a1f7\transformed\lifecycle-runtime-release\res
+com.grinding.app-startup-runtime-1.2.0-27 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\7be738b51f6f5073a22bd57989ffaf23\transformed\startup-runtime-1.2.0\res
+com.grinding.app-lifecycle-viewmodel-release-28 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\7c93d0725f4bf20655814d58d64cc6ea\transformed\lifecycle-viewmodel-release\res
+com.grinding.app-graphics-path-1.0.1-29 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\7ca758bf85154bdbbfeb4ae30a922353\transformed\graphics-path-1.0.1\res
+com.grinding.app-ui-graphics-release-30 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\8167889ef86a900b4d6487a7a147400c\transformed\ui-graphics-release\res
+com.grinding.app-activity-1.9.3-31 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\8d4b2d49a367d0ad4440e9b1b670cbea\transformed\activity-1.9.3\res
+com.grinding.app-core-1.15.0-32 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\8e006919f1a5b821440781b64b5fa506\transformed\core-1.15.0\res
+com.grinding.app-activity-compose-1.9.3-33 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\962d6e89e1102df0e594337284953afb\transformed\activity-compose-1.9.3\res
+com.grinding.app-profileinstaller-1.3.1-34 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\970c703db159602462474144d5081ed2\transformed\profileinstaller-1.3.1\res
+com.grinding.app-lifecycle-livedata-core-2.8.7-35 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\a8d1ec6dbc45afc27f396efc4ad21aa2\transformed\lifecycle-livedata-core-2.8.7\res
+com.grinding.app-runtime-release-36 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\ac91114090a9b2d73983f257d3ca7cd0\transformed\runtime-release\res
+com.grinding.app-navigation-runtime-ktx-2.8.3-37 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\b467cd1d0ce588895328656c4d3b6350\transformed\navigation-runtime-ktx-2.8.3\res
+com.grinding.app-lifecycle-viewmodel-compose-release-38 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\b4b2c5fd9045a290c7aac491e6c3691f\transformed\lifecycle-viewmodel-compose-release\res
+com.grinding.app-foundation-layout-release-39 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\b4f1c360cfd7c1c20ed1b745c04cf66e\transformed\foundation-layout-release\res
+com.grinding.app-customview-poolingcontainer-1.0.0-40 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\b5d49905cd78d3e75f1c12db6d6370cb\transformed\customview-poolingcontainer-1.0.0\res
+com.grinding.app-lifecycle-viewmodel-ktx-2.8.7-41 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\b68601a71b98a755a414508a810382c4\transformed\lifecycle-viewmodel-ktx-2.8.7\res
+com.grinding.app-ui-text-release-42 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\ba216d5c1c48e50a77391ff6a17ac932\transformed\ui-text-release\res
+com.grinding.app-runtime-saveable-release-43 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\c15f7654ad16d71b671051401dee5981\transformed\runtime-saveable-release\res
+com.grinding.app-hilt-navigation-1.2.0-44 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\c1c9e7d315e93461fb5f778a6d057d01\transformed\hilt-navigation-1.2.0\res
+com.grinding.app-ui-tooling-preview-release-45 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\d0588ef921b48ffbffbc10a16eea2d78\transformed\ui-tooling-preview-release\res
+com.grinding.app-ui-tooling-release-46 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\d1006cb11bfe54a963fa4145247842bd\transformed\ui-tooling-release\res
+com.grinding.app-core-runtime-2.2.0-47 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\e0bebc1317f885002b757d1350c880a9\transformed\core-runtime-2.2.0\res
+com.grinding.app-material3-release-48 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\e1818f6ad2fbc818e137d8793b5b3acc\transformed\material3-release\res
+com.grinding.app-ui-util-release-49 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\e2d3b774b436409385a1b8e8c76ea5aa\transformed\ui-util-release\res
+com.grinding.app-fragment-1.5.1-50 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\e4a25e2311d640ce7d8131b02f4f265f\transformed\fragment-1.5.1\res
+com.grinding.app-activity-ktx-1.9.3-51 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\e4d3bfcae20ab0a42ff5e69e1e42f71c\transformed\activity-ktx-1.9.3\res
+com.grinding.app-lifecycle-viewmodel-savedstate-2.8.7-52 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\e821fe1961c817383119f456bcf4cba6\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
+com.grinding.app-foundation-release-53 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\f4f981c72a3d357122c3d77ff6491249\transformed\foundation-release\res
+com.grinding.app-ui-tooling-data-release-54 C:\Users\PUTRA DEWATA\.gradle\caches\8.14\transforms\f9de2b64195639af46d74d994342c0da\transformed\ui-tooling-data-release\res
+com.grinding.app-pngs-55 D:\DATA PRIBADI RIO\PROJECT-VIBE CODING\PRODUCTION\pomodoro+todolist\app\build\generated\res\pngs\debug
+com.grinding.app-resValues-56 D:\DATA PRIBADI RIO\PROJECT-VIBE CODING\PRODUCTION\pomodoro+todolist\app\build\generated\res\resValues\debug
+com.grinding.app-packageDebugResources-57 D:\DATA PRIBADI RIO\PROJECT-VIBE CODING\PRODUCTION\pomodoro+todolist\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.grinding.app-packageDebugResources-58 D:\DATA PRIBADI RIO\PROJECT-VIBE CODING\PRODUCTION\pomodoro+todolist\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.grinding.app-debug-59 D:\DATA PRIBADI RIO\PROJECT-VIBE CODING\PRODUCTION\pomodoro+todolist\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.grinding.app-debug-60 D:\DATA PRIBADI RIO\PROJECT-VIBE CODING\PRODUCTION\pomodoro+todolist\app\src\debug\res
+com.grinding.app-main-61 D:\DATA PRIBADI RIO\PROJECT-VIBE CODING\PRODUCTION\pomodoro+todolist\app\src\main\res
