@@ -411,25 +411,25 @@ public final class DaggerGrindingApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_grinding_app_ui_viewmodel_TimerViewModel = "com.grinding.app.ui.viewmodel.TimerViewModel";
-
       static String com_grinding_app_ui_screens_auth_AuthViewModel = "com.grinding.app.ui.screens.auth.AuthViewModel";
 
-      static String com_grinding_app_ui_viewmodel_StatistikViewModel = "com.grinding.app.ui.viewmodel.StatistikViewModel";
+      static String com_grinding_app_ui_viewmodel_TimerViewModel = "com.grinding.app.ui.viewmodel.TimerViewModel";
 
       static String com_grinding_app_ui_viewmodel_TaskViewModel = "com.grinding.app.ui.viewmodel.TaskViewModel";
 
-      @KeepFieldType
-      TimerViewModel com_grinding_app_ui_viewmodel_TimerViewModel2;
+      static String com_grinding_app_ui_viewmodel_StatistikViewModel = "com.grinding.app.ui.viewmodel.StatistikViewModel";
 
       @KeepFieldType
       AuthViewModel com_grinding_app_ui_screens_auth_AuthViewModel2;
 
       @KeepFieldType
-      StatistikViewModel com_grinding_app_ui_viewmodel_StatistikViewModel2;
+      TimerViewModel com_grinding_app_ui_viewmodel_TimerViewModel2;
 
       @KeepFieldType
       TaskViewModel com_grinding_app_ui_viewmodel_TaskViewModel2;
+
+      @KeepFieldType
+      StatistikViewModel com_grinding_app_ui_viewmodel_StatistikViewModel2;
     }
   }
 
@@ -479,25 +479,25 @@ public final class DaggerGrindingApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_grinding_app_ui_viewmodel_TaskViewModel = "com.grinding.app.ui.viewmodel.TaskViewModel";
+      static String com_grinding_app_ui_viewmodel_TimerViewModel = "com.grinding.app.ui.viewmodel.TimerViewModel";
 
       static String com_grinding_app_ui_viewmodel_StatistikViewModel = "com.grinding.app.ui.viewmodel.StatistikViewModel";
 
+      static String com_grinding_app_ui_viewmodel_TaskViewModel = "com.grinding.app.ui.viewmodel.TaskViewModel";
+
       static String com_grinding_app_ui_screens_auth_AuthViewModel = "com.grinding.app.ui.screens.auth.AuthViewModel";
 
-      static String com_grinding_app_ui_viewmodel_TimerViewModel = "com.grinding.app.ui.viewmodel.TimerViewModel";
-
       @KeepFieldType
-      TaskViewModel com_grinding_app_ui_viewmodel_TaskViewModel2;
+      TimerViewModel com_grinding_app_ui_viewmodel_TimerViewModel2;
 
       @KeepFieldType
       StatistikViewModel com_grinding_app_ui_viewmodel_StatistikViewModel2;
 
       @KeepFieldType
-      AuthViewModel com_grinding_app_ui_screens_auth_AuthViewModel2;
+      TaskViewModel com_grinding_app_ui_viewmodel_TaskViewModel2;
 
       @KeepFieldType
-      TimerViewModel com_grinding_app_ui_viewmodel_TimerViewModel2;
+      AuthViewModel com_grinding_app_ui_screens_auth_AuthViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -653,7 +653,7 @@ public final class DaggerGrindingApp_HiltComponents_SingletonC {
     }
 
     @Override
-    public void injectGrindingApp(GrindingApp grindingApp) {
+    public void injectGrindingApp(GrindingApp arg0) {
     }
 
     @Override

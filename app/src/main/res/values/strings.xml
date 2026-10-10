@@ -109,6 +109,9 @@
     <string name="task_label_schedule">Jadwal &amp; Waktu</string>
     <string name="task_label_target_date">Tenggat Target</string>
     <string name="task_label_session_time">Waktu Sesi</string>
+    <string name="task_dialog_pick_date">Pilih Tanggal Target</string>
+    <string name="task_dialog_pick_time">Pilih Waktu Sesi</string>
+    <string name="action_pilih">Pilih</string>
     <string name="task_btn_save">Simpan Tugas</string>
 
     <!-- Kategori Bawaan -->

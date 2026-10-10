@@ -10,6 +10,7 @@ string action_jeda
 string action_kembali
 string action_lanjut
 string action_mulai
+string action_pilih
 string action_reset
 string action_selesai
 string action_simpan
@@ -135,6 +136,8 @@ string target_percent_format
 string task_btn_save
 string task_category_selected
 string task_cycle_done_format
+string task_dialog_pick_date
+string task_dialog_pick_time
 string task_duration_format
 string task_helper_activity
 string task_helper_session_duration

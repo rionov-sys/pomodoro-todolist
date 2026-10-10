@@ -114,6 +114,7 @@
     <string name="action_kembali">Kembali</string>
     <string name="action_lanjut">Lanjutkan</string>
     <string name="action_mulai">Mulai</string>
+    <string name="action_pilih">Pilih</string>
     <string name="action_reset">Atur Ulang</string>
     <string name="action_selesai">Selesaikan</string>
     <string name="action_simpan">Simpan</string>
@@ -330,6 +331,8 @@
     <string name="task_btn_save">Simpan Tugas</string>
     <string name="task_category_selected">Terpilih: %1$s</string>
     <string name="task_cycle_done_format">🍅 %1$d/%2$d Siklus Selesai</string>
+    <string name="task_dialog_pick_date">Pilih Tanggal Target</string>
+    <string name="task_dialog_pick_time">Pilih Waktu Sesi</string>
     <string name="task_duration_format">%1$d mnt (%2$d sesi)</string>
     <string name="task_helper_activity">Berikan nama tindakan spesifik dan jelas.</string>
     <string name="task_helper_session_duration">Tentukan panjang interval sebelum jeda istirahat.</string>

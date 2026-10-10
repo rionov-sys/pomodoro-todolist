@@ -17,15 +17,20 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
 import com.grinding.app.R
 import com.grinding.app.data.model.TaskDto
 import com.grinding.app.ui.components.CategorySelector
 import com.grinding.app.ui.components.defaultCategories
 import com.grinding.app.ui.theme.*
+import java.time.Instant
 import java.time.LocalDate
+import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TaskAddEditScreen(
     taskId: String? = null,
@@ -56,7 +61,87 @@ fun TaskAddEditScreen(
     }
     var startTime by remember { mutableStateOf(existingTask?.startTime ?: "09:00") }
 
+    var showDatePickerDialog by remember { mutableStateOf(false) }
+    var showTimePickerDialog by remember { mutableStateOf(false) }
+
     val isEditing = existingTask != null || taskId != null
+
+    // Date Picker Dialog
+    if (showDatePickerDialog) {
+        val initialMillis = targetDate.atStartOfDay(ZoneId.of("UTC")).toInstant().toEpochMilli()
+        val datePickerState = rememberDatePickerState(
+            initialSelectedDateMillis = initialMillis
+        )
+        DatePickerDialog(
+            onDismissRequest = { showDatePickerDialog = false },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        datePickerState.selectedDateMillis?.let { millis ->
+                            targetDate = Instant.ofEpochMilli(millis)
+                                .atZone(ZoneId.of("UTC"))
+                                .toLocalDate()
+                        }
+                        showDatePickerDialog = false
+                    },
+                    colors = ButtonDefaults.buttonColors(containerColor = Primary, contentColor = OnPrimary),
+                    shape = PillShape
+                ) {
+                    Text(stringResource(R.string.action_pilih), fontWeight = FontWeight.Bold)
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showDatePickerDialog = false }) {
+                    Text(stringResource(R.string.action_batal), color = OnSurfaceVariant)
+                }
+            }
+        ) {
+            DatePicker(
+                state = datePickerState,
+                colors = DatePickerDefaults.colors(
+                    selectedDayContainerColor = Primary,
+                    selectedDayContentColor = OnPrimary,
+                    todayDateBorderColor = Primary
+                )
+            )
+        }
+    }
+
+    // Time Picker Dialog
+    if (showTimePickerDialog) {
+        val initialHour = try {
+            startTime.split(":")[0].trim().toInt()
+        } catch (e: Exception) { 9 }
+        val initialMinute = try {
+            startTime.split(":")[1].trim().take(2).toInt()
+        } catch (e: Exception) { 0 }
+
+        val timePickerState = rememberTimePickerState(
+            initialHour = initialHour,
+            initialMinute = initialMinute,
+            is24Hour = true
+        )
+
+        TimePickerDialog(
+            title = stringResource(R.string.task_dialog_pick_time),
+            onCancel = { showTimePickerDialog = false },
+            onConfirm = {
+                startTime = String.format(Locale.getDefault(), "%02d:%02d", timePickerState.hour, timePickerState.minute)
+                showTimePickerDialog = false
+            }
+        ) {
+            TimePicker(
+                state = timePickerState,
+                colors = TimePickerDefaults.colors(
+                    clockDialSelectedContentColor = OnPrimary,
+                    clockDialColor = SurfaceContainerHigh,
+                    selectorColor = Primary,
+                    timeSelectorSelectedContainerColor = PrimaryContainer,
+                    timeSelectorSelectedContentColor = OnPrimaryFixed
+                )
+            )
+        }
+    }
 
     Scaffold(
         topBar = {
@@ -429,43 +514,75 @@ fun TaskAddEditScreen(
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.spacedBy(10.dp)
                         ) {
-                            // Target Date Card
+                            // Target Date Card (Interactive Clickable DatePicker)
                             Surface(
                                 shape = RoundedCornerShape(16.dp),
                                 color = SurfaceContainerLow,
                                 modifier = Modifier
                                     .weight(1f)
-                                    .clickable { /* Date picker toggle or quick cycle */ }
+                                    .clip(RoundedCornerShape(16.dp))
+                                    .clickable { showDatePickerDialog = true }
                             ) {
                                 Row(
                                     modifier = Modifier.padding(12.dp),
                                     verticalAlignment = Alignment.CenterVertically,
                                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                                 ) {
-                                    Icon(Icons.Default.CalendarToday, contentDescription = null, tint = Primary, modifier = Modifier.size(20.dp))
+                                    Icon(
+                                        Icons.Default.CalendarToday,
+                                        contentDescription = null,
+                                        tint = Primary,
+                                        modifier = Modifier.size(20.dp)
+                                    )
                                     Column {
-                                        Text(text = stringResource(R.string.task_label_target_date), style = MaterialTheme.typography.labelSmall, color = Outline)
+                                        Text(
+                                            text = stringResource(R.string.task_label_target_date),
+                                            style = MaterialTheme.typography.labelSmall,
+                                            color = Outline
+                                        )
                                         val df = DateTimeFormatter.ofPattern("d MMM yyyy", Locale("id", "ID"))
-                                        Text(text = targetDate.format(df), style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.Bold, color = OnSurface)
+                                        Text(
+                                            text = targetDate.format(df),
+                                            style = MaterialTheme.typography.labelMedium,
+                                            fontWeight = FontWeight.Bold,
+                                            color = OnSurface
+                                        )
                                     }
                                 }
                             }
 
-                            // Start Time Card
+                            // Start Time Card (Interactive Clickable TimePicker)
                             Surface(
                                 shape = RoundedCornerShape(16.dp),
                                 color = SurfaceContainerLow,
-                                modifier = Modifier.weight(1f)
+                                modifier = Modifier
+                                    .weight(1f)
+                                    .clip(RoundedCornerShape(16.dp))
+                                    .clickable { showTimePickerDialog = true }
                             ) {
                                 Row(
                                     modifier = Modifier.padding(12.dp),
                                     verticalAlignment = Alignment.CenterVertically,
                                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                                 ) {
-                                    Icon(Icons.Default.Alarm, contentDescription = null, tint = Primary, modifier = Modifier.size(20.dp))
+                                    Icon(
+                                        Icons.Default.Alarm,
+                                        contentDescription = null,
+                                        tint = Primary,
+                                        modifier = Modifier.size(20.dp)
+                                    )
                                     Column {
-                                        Text(text = stringResource(R.string.task_label_session_time), style = MaterialTheme.typography.labelSmall, color = Outline)
-                                        Text(text = "$startTime WIB", style = MaterialTheme.typography.labelMedium, fontWeight = FontWeight.Bold, color = OnSurface)
+                                        Text(
+                                            text = stringResource(R.string.task_label_session_time),
+                                            style = MaterialTheme.typography.labelSmall,
+                                            color = Outline
+                                        )
+                                        Text(
+                                            text = "$startTime WIB",
+                                            style = MaterialTheme.typography.labelMedium,
+                                            fontWeight = FontWeight.Bold,
+                                            color = OnSurface
+                                        )
                                     }
                                 }
                             }
@@ -537,6 +654,61 @@ fun TaskAddEditScreen(
                             style = MaterialTheme.typography.labelLarge,
                             fontWeight = FontWeight.Bold
                         )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun TimePickerDialog(
+    title: String = "Pilih Waktu Sesi",
+    onCancel: () -> Unit,
+    onConfirm: () -> Unit,
+    content: @Composable () -> Unit
+) {
+    Dialog(
+        onDismissRequest = onCancel,
+        properties = DialogProperties(usePlatformDefaultWidth = false)
+    ) {
+        Surface(
+            shape = RoundedCornerShape(24.dp),
+            color = SurfaceContainerLowest,
+            tonalElevation = 6.dp,
+            modifier = Modifier
+                .width(IntrinsicSize.Min)
+                .height(IntrinsicSize.Min)
+                .background(shape = RoundedCornerShape(24.dp), color = SurfaceContainerLowest)
+                .padding(24.dp)
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = OnSurface,
+                    modifier = Modifier.fillMaxWidth()
+                )
+                content()
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.End,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    TextButton(onClick = onCancel) {
+                        Text(stringResource(R.string.action_batal), color = OnSurfaceVariant)
+                    }
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Button(
+                        onClick = onConfirm,
+                        colors = ButtonDefaults.buttonColors(containerColor = Primary, contentColor = OnPrimary),
+                        shape = PillShape
+                    ) {
+                        Text(stringResource(R.string.action_pilih), fontWeight = FontWeight.Bold)
                     }
                 }
             }
